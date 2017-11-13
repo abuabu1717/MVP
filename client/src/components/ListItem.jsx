@@ -20,7 +20,7 @@ class ListItem extends React.Component {
 
      $.ajax({
       type: "POST",
-      url: PROD_URL + "/parks/updatedb",
+      url: "https://shrouded-escarpment-38063.herokuapp.com/parks/updatedb",
       data: {
         name: this.props.park[0].name,
         address: this.props.park[0].vicinity,
