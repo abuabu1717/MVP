@@ -32,7 +32,8 @@ class App extends React.Component {
     console.log(`Searched for ${term}`);
     $.ajax({
       type: "POST",
-      url: "http://127.0.0.1:5000/parks/import",
+      //url: "http://127.0.0.1:5000/parks/import",
+      url: "https://shrouded-escarpment-38063.herokuapp.com/parks/import",
       data: { term: term },
       success : (result) => {
         console.log('Success!');

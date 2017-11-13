@@ -21,6 +21,7 @@ class ListItem extends React.Component {
      $.ajax({
       type: "POST",
       url: "https://shrouded-escarpment-38063.herokuapp.com/parks/updatedb",
+      //url: "http://127.0.0.1:5000/parks/updatedb",
       data: {
         name: this.props.park[0].name,
         address: this.props.park[0].vicinity,
