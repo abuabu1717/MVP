@@ -1,0 +1,3 @@
+{
+    "mongodbConStr": "mongodb://test:begin@ds155315.mlab.com:55315/heroku_9xdccj4f"
+}

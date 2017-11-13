@@ -1,8 +1,9 @@
 //database
-
+var config = require('./herokuconfig.json')
 var mongoose = require('mongoose');
 var db = mongoose.connection;
-mongoose.connect('mongodb://localhost/Parks', {
+
+mongoose.connect(config.mongodbConStr, {
   useMongoClient: true
 });
 
@@ -11,7 +12,7 @@ db.on('error', function() {
 });
 
 db.on('connected', function () {
-  console.log('Mongoose default connection open to ');
+  console.log('Mongoose default connection open to ' + config.mongodbConStr);
 });
 
 db.on('disconnected', function () {
