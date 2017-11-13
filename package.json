@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "react-dev": "webpack -d --watch",
-    "server-dev": "nodemon server/index.js"
+    "server-dev": "nodemon index.js"
   },
   "author": "Lisha Deng",
   "license": "ISC",
@@ -24,7 +24,8 @@
     "mongoose": "^4.13.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "node-geocoder": "^3.21.1"
   },
   "script": { "postinstall": "webpack --config webpack.config.js --progress --colors"}
 }
