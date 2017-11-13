@@ -26,6 +26,7 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "request": "^2.81.0",
-    "node-geocoder": "^3.21.1"
+    "node-geocoder": "^3.21.1",
+    "webpack": "^2.2.1"
   }
 }
