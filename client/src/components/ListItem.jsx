@@ -1,5 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
+import PROD_URL from './api-config';
+import DEV_URL from './api-config';
 
 class ListItem extends React.Component {
   constructor(props) {
@@ -15,9 +17,10 @@ class ListItem extends React.Component {
     this.state.likes++
      console.log('updated likes to ' + this.state.likes);
      //this.updateDB();
+
      $.ajax({
       type: "POST",
-      url: "http://127.0.0.1:5000/parks/updatedb",
+      url: PROD_URL + "/parks/updatedb",
       data: {
         name: this.props.park[0].name,
         address: this.props.park[0].vicinity,
