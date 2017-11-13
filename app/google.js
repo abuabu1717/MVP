@@ -36,7 +36,7 @@ var searchGoogleRadar = (geoData, res) => {
   let longitude = geoData[0].longitude;
   let radius = 4023;
 
-  let google_places_url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + `${latitude},${longitude}&radius=${radius}&type=park&key=${API_KEY}`;
+  let google_places_url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + '${latitude},${longitude}&radius=${radius}&type=park&key=${API_KEY}';
 
 
   request(google_places_url, (error, response, body) => {

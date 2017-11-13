@@ -94,7 +94,7 @@ app.get('/test', function (req, res) {
 });
 
 app.listen(process.env.PORT || 5000, function() {
-  console.log('App started on port 5000');
+  console.log('App started on port ' + process.env.PORT || 5000);
 });
 
 
