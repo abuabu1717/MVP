@@ -95,15 +95,15 @@ app.get('/test', function (req, res) {
 
 //process.env.PORT is a way for heroku to pass a port.  On every deploy the port will change.
 // || means OR.. if there's no value being passed there it defaults to 5000 (i.e., localhost development)
-app.listen(5000, function() {
+/*app.listen(5000, function() {
   console.log('App started on port 5000' );
-});
+});*/
 
-/*
+
 app.listen(process.env.PORT || 5000, function() {
   console.log('App started on port ' + process.env.PORT || 5000);
 });
-*/
+
 
 
 
